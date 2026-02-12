@@ -1,0 +1,18 @@
+[
+  {
+    "trainId": "T101",
+    "trainName": "Rajdhani Express",
+    "source": "delhi",
+    "destination": "mumbai",
+    "totalSeats": 100,
+    "availableSeats": 100
+  },
+  {
+    "trainId": "T102",
+    "trainName": "Shatabdi Express",
+    "source": "delhi",
+    "destination": "jaipur",
+    "totalSeats": 80,
+    "availableSeats": 80
+  }
+]

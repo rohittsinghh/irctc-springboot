@@ -1,0 +1,7 @@
+[
+  {"trainId":"12444","trainName":"Jammu Tawi - Shri Mata Vaishno Devi Katra Passenger","source":"JAT","destination":"SVDK","availableSeats":20,"totalSeats":200},
+  {"trainId":"12236","trainName":"Jammu Tawi - New Delhi AC Express","source":"JAT","destination":"NDLS","availableSeats":12,"totalSeats":120},
+  {"trainId":"12446","trainName":"Jammu Tawi - Shri Mata Vaishno Devi Katra Express","source":"JAT","destination":"SVDK","availableSeats":5,"totalSeats":200},
+  {"trainId":"22456","trainName":"Jammu Tawi - Pune Superfast Express","source":"JAT","destination":"PUNE","availableSeats":8,"totalSeats":180},
+  {"trainId":"12452","trainName":"Jammu Tawi - Tirunelveli Express (via Chennai)","source":"JAT","destination":"TEN","availableSeats":15,"totalSeats":160}
+]

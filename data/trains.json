@@ -1,0 +1,50 @@
+[ {
+  "trainId" : "T101",
+  "trainName" : "Rajdhani Express",
+  "source" : "delhi",
+  "destination" : "mumbai",
+  "totalSeats" : 100,
+  "availableSeats" : 98
+}, {
+  "trainId" : "T102",
+  "trainName" : "Shatabdi Express",
+  "source" : "delhi",
+  "destination" : "jaipur",
+  "totalSeats" : 80,
+  "availableSeats" : 69
+}, {
+  "trainId" : "12444",
+  "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Passenger",
+  "source" : "JAT",
+  "destination" : "SVDK",
+  "totalSeats" : 200,
+  "availableSeats" : 17
+}, {
+  "trainId" : "12236",
+  "trainName" : "Jammu Tawi - New Delhi AC Express",
+  "source" : "JAT",
+  "destination" : "NDLS",
+  "totalSeats" : 120,
+  "availableSeats" : 6
+}, {
+  "trainId" : "12446",
+  "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Express",
+  "source" : "JAT",
+  "destination" : "SVDK",
+  "totalSeats" : 200,
+  "availableSeats" : 0
+}, {
+  "trainId" : "22456",
+  "trainName" : "Jammu Tawi - Pune Superfast Express",
+  "source" : "JAT",
+  "destination" : "PUNE",
+  "totalSeats" : 180,
+  "availableSeats" : 8
+}, {
+  "trainId" : "12452",
+  "trainName" : "Jammu Tawi - Tirunelveli Express (via Chennai)",
+  "source" : "JAT",
+  "destination" : "TEN",
+  "totalSeats" : 160,
+  "availableSeats" : 15
+} ]

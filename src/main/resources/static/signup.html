@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRCTC — Create Account</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚂</text></svg>" />
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+
+<div id="page-loader"></div>
+<div id="toasts" aria-live="polite"></div>
+<nav id="nav"></nav>
+
+<main class="auth-wrap">
+
+  <!-- ── Hero ── -->
+  <aside class="auth-hero">
+    <div class="hero-tag">✦ New Account</div>
+    <h1 class="hero-title">Start Your<br><span>Adventure</span><br>Today.</h1>
+    <p class="hero-sub">
+      Join millions of travellers who trust IRCTC to get them
+      where they need to go — safely, reliably, on time.
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="stat-val">Free</span><span class="stat-lbl">To Register</span></div>
+      <div class="hero-stat"><span class="stat-val">1 min</span><span class="stat-lbl">Setup</span></div>
+      <div class="hero-stat"><span class="stat-val">24/7</span><span class="stat-lbl">Support</span></div>
+    </div>
+  </aside>
+
+  <!-- ── Form ── -->
+  <section class="auth-panel">
+    <div class="auth-card">
+
+      <div class="auth-card-logo"><span>🚂</span> IRCTC</div>
+      <h2>Create account</h2>
+      <p class="sub">Fill in the details below to get started</p>
+
+      <form id="signup-form" class="auth-form" novalidate>
+
+        <div class="fgroup">
+          <label for="username">Username</label>
+          <input id="username" type="text" class="input"
+                 placeholder="Choose a username (min 3 chars)"
+                 autocomplete="username" autocapitalize="off" />
+        </div>
+
+        <div class="fgroup">
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <input id="password" type="password" class="input"
+                   placeholder="Create a password (min 4 chars)"
+                   autocomplete="new-password" />
+            <button type="button" id="eye-pass" class="eye-btn" title="Show/hide">👁</button>
+          </div>
+        </div>
+
+        <div class="fgroup">
+          <label for="confirm">Confirm Password</label>
+          <div class="input-wrap">
+            <input id="confirm" type="password" class="input"
+                   placeholder="Re-enter your password"
+                   autocomplete="new-password" />
+            <button type="button" id="eye-conf" class="eye-btn" title="Show/hide">👁</button>
+          </div>
+        </div>
+
+        <button type="submit" id="btn-signup" class="btn btn-primary btn-full btn-lg">
+          Create Account
+        </button>
+
+      </form>
+
+      <p class="auth-foot">Already have an account? <a href="/index.html">Sign in →</a></p>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/signup.js"></script>
+</body>
+</html>

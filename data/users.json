@@ -1,0 +1,394 @@
+[ {
+  "ticketsBooked" : [ {
+    "ticketId" : "01a77604-1a01-4784-acc5-63e5f35ae193",
+    "userId" : "ec6a88bb-f784-40ae-9ce8-d171d1fe9575",
+    "source" : "delhi",
+    "destination" : "mumbai",
+    "journeyDate" : "2026-02-12",
+    "train" : {
+      "trainId" : "T101",
+      "trainName" : "Rajdhani Express",
+      "source" : "delhi",
+      "destination" : "mumbai",
+      "totalSeats" : 100,
+      "availableSeats" : 99
+    }
+  } ],
+  "userId" : "ec6a88bb-f784-40ae-9ce8-d171d1fe9575",
+  "name" : "rohit",
+  "password" : "1234"
+}, {
+  "ticketsBooked" : [ ],
+  "userId" : "f1b10b28-0c37-4224-a958-00c040a19d23",
+  "name" : "",
+  "password" : ""
+}, {
+  "ticketsBooked" : [ {
+    "ticketId" : "8c928dfe-49ac-4f65-a5ed-86ed8d677197",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "bf2e1254-1a2a-4fca-84a8-45da6260383b",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "02a750cc-ea50-4f6d-a90a-ee180fb9edf0",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "fd5a0107-1abf-49b3-b8d8-3fdf51f4ecbf",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "c9c4a5f1-bc6b-4e5c-881d-11dc099e2a0f",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "a1739090-0092-41c2-9b7d-41bbc119b53e",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "b821bc6f-404f-4b5c-a250-53615a4313b1",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "a3d68b52-300f-482b-bea9-d414c0885a38",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "9fb99cd3-06d5-4036-884a-e6e4444de930",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "cbaaddef-5986-44af-9c98-2d1738b5a9b3",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "c4828439-db7d-4a02-8068-1b35ad7042f4",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "jaipur",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T102",
+      "trainName" : "Shatabdi Express",
+      "source" : "delhi",
+      "destination" : "jaipur",
+      "totalSeats" : 80,
+      "availableSeats" : 68
+    }
+  }, {
+    "ticketId" : "3938c085-6051-4c0c-b035-d3dea84c7c21",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "SVDK",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12444",
+      "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Passenger",
+      "source" : "JAT",
+      "destination" : "SVDK",
+      "totalSeats" : 200,
+      "availableSeats" : 17
+    }
+  }, {
+    "ticketId" : "a0c41a4f-a5d1-4cfa-84fb-657c1c74af88",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "SVDK",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12444",
+      "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Passenger",
+      "source" : "JAT",
+      "destination" : "SVDK",
+      "totalSeats" : 200,
+      "availableSeats" : 17
+    }
+  }, {
+    "ticketId" : "99a250a5-dd5e-4f2b-808c-e06ed110c9cb",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "SVDK",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12444",
+      "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Passenger",
+      "source" : "JAT",
+      "destination" : "SVDK",
+      "totalSeats" : 200,
+      "availableSeats" : 17
+    }
+  }, {
+    "ticketId" : "40722eeb-df08-4369-8dfc-e62e3888129e",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "SVDK",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12446",
+      "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Express",
+      "source" : "JAT",
+      "destination" : "SVDK",
+      "totalSeats" : 200,
+      "availableSeats" : 0
+    }
+  }, {
+    "ticketId" : "193afa55-a005-4099-9fe5-0cfa84a42ba4",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "SVDK",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12446",
+      "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Express",
+      "source" : "JAT",
+      "destination" : "SVDK",
+      "totalSeats" : 200,
+      "availableSeats" : 0
+    }
+  }, {
+    "ticketId" : "82add29a-c857-487c-83ef-e86eb27d707a",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "SVDK",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12446",
+      "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Express",
+      "source" : "JAT",
+      "destination" : "SVDK",
+      "totalSeats" : 200,
+      "availableSeats" : 0
+    }
+  }, {
+    "ticketId" : "48967dce-19cc-4389-926c-2708d32888ab",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "SVDK",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12446",
+      "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Express",
+      "source" : "JAT",
+      "destination" : "SVDK",
+      "totalSeats" : 200,
+      "availableSeats" : 0
+    }
+  }, {
+    "ticketId" : "6ac6a8b7-25e6-47f4-9b93-08e76137df2c",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "SVDK",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12446",
+      "trainName" : "Jammu Tawi - Shri Mata Vaishno Devi Katra Express",
+      "source" : "JAT",
+      "destination" : "SVDK",
+      "totalSeats" : 200,
+      "availableSeats" : 0
+    }
+  }, {
+    "ticketId" : "4de0f11e-d108-4a82-b640-6217cda66e1d",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "delhi",
+    "destination" : "mumbai",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "T101",
+      "trainName" : "Rajdhani Express",
+      "source" : "delhi",
+      "destination" : "mumbai",
+      "totalSeats" : 100,
+      "availableSeats" : 98
+    }
+  }, {
+    "ticketId" : "557e7e74-946a-4df9-935d-fc5137896041",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "NDLS",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12236",
+      "trainName" : "Jammu Tawi - New Delhi AC Express",
+      "source" : "JAT",
+      "destination" : "NDLS",
+      "totalSeats" : 120,
+      "availableSeats" : 6
+    }
+  }, {
+    "ticketId" : "888692c3-9930-43c9-b142-9795035933b3",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "NDLS",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12236",
+      "trainName" : "Jammu Tawi - New Delhi AC Express",
+      "source" : "JAT",
+      "destination" : "NDLS",
+      "totalSeats" : 120,
+      "availableSeats" : 6
+    }
+  }, {
+    "ticketId" : "13ff349e-a6cc-4bd0-b1a6-5d9db87aa593",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "NDLS",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12236",
+      "trainName" : "Jammu Tawi - New Delhi AC Express",
+      "source" : "JAT",
+      "destination" : "NDLS",
+      "totalSeats" : 120,
+      "availableSeats" : 6
+    }
+  }, {
+    "ticketId" : "0dcf3a4d-b6c1-40df-8911-fe210e872775",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "NDLS",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12236",
+      "trainName" : "Jammu Tawi - New Delhi AC Express",
+      "source" : "JAT",
+      "destination" : "NDLS",
+      "totalSeats" : 120,
+      "availableSeats" : 6
+    }
+  }, {
+    "ticketId" : "77ea8424-88e4-4961-a73c-9bc2bf8813c8",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "NDLS",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12236",
+      "trainName" : "Jammu Tawi - New Delhi AC Express",
+      "source" : "JAT",
+      "destination" : "NDLS",
+      "totalSeats" : 120,
+      "availableSeats" : 6
+    }
+  }, {
+    "ticketId" : "acfdd544-b266-4d90-ac0c-54af56f704c1",
+    "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+    "source" : "JAT",
+    "destination" : "NDLS",
+    "journeyDate" : "2026-02-13",
+    "train" : {
+      "trainId" : "12236",
+      "trainName" : "Jammu Tawi - New Delhi AC Express",
+      "source" : "JAT",
+      "destination" : "NDLS",
+      "totalSeats" : 120,
+      "availableSeats" : 6
+    }
+  } ],
+  "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
+  "name" : "rohit1",
+  "password" : "1111"
+} ]
