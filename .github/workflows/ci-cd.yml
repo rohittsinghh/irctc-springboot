@@ -29,17 +29,19 @@ jobs:
 
       # 4. Log in to Docker Hub
       - name: Log in to Docker Hub
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && secrets.DOCKER_USERNAME != '' && secrets.DOCKER_PASSWORD != ''
         uses: docker/login-action@v3
         with:
-          username: rohittsinghh
+          username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # 5. Build the Docker image and push to Docker Hub
       - name: Build & Push Docker Image
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main' && secrets.DOCKER_USERNAME != '' && secrets.DOCKER_PASSWORD != ''
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
           tags: |
-            rohittsinghh/irctc-springboot:latest
-            rohittsinghh/irctc-springboot:${{ github.sha }}
+            ${{ secrets.DOCKER_USERNAME }}/irctc-springboot:latest
+            ${{ secrets.DOCKER_USERNAME }}/irctc-springboot:${{ github.sha }}
