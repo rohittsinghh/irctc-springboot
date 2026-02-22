@@ -31,7 +31,7 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
+          username: rohittsinghh
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # 5. Build the Docker image and push to Docker Hub
@@ -41,5 +41,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/irctc-springboot:latest
-            ${{ secrets.DOCKER_USERNAME }}/irctc-springboot:${{ github.sha }}
+            rohittsinghh/irctc-springboot:latest
+            rohittsinghh/irctc-springboot:${{ github.sha }}
