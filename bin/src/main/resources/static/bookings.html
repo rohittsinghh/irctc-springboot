@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRCTC — My Bookings</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚂</text></svg>" />
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+
+<div id="page-loader"></div>
+<div id="toasts" aria-live="polite"></div>
+<nav id="nav"></nav>
+
+<main>
+  <div class="page">
+
+    <header class="ph">
+      <p class="ph-eye">Travel History</p>
+      <div class="ph-row">
+        <div>
+          <h1 class="ph-title">My Bookings</h1>
+          <p class="ph-sub">All your confirmed tickets in one place</p>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;">
+          <span id="ticket-count" class="text-muted" style="font-size:.9rem;"></span>
+          <button id="btn-refresh" class="btn btn-outline btn-sm">
+            <span class="ri">↻</span> Refresh
+          </button>
+          <a href="/dashboard.html" class="btn btn-primary btn-sm">+ Book Train</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="tickets-list"></section>
+
+  </div>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/bookings.js"></script>
+</body>
+</html>

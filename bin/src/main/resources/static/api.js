@@ -67,10 +67,7 @@
       return req('/bookings/' + userId);
     },
     cancelTicket: function (ticketId) {
-      var session = (window.Auth && Auth.get && Auth.get()) || {};
-      var userId = session.userId;
-      var path = '/bookings/' + ticketId + (userId ? '?userId=' + encodeURIComponent(userId) : '');
-      return req(path, { method: 'DELETE' });
+      return req('/bookings/' + ticketId, { method: 'DELETE' });
     },
 
     /* ── Health ── */

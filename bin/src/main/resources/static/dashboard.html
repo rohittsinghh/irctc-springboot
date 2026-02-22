@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRCTC — Search Trains</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚂</text></svg>" />
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+
+<div id="page-loader"></div>
+<div id="toasts" aria-live="polite"></div>
+<nav id="nav"></nav>
+
+<main>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="ph">
+      <p class="ph-eye">Train Search</p>
+      <h1 class="ph-title">Find Your Train</h1>
+      <p class="ph-sub">Search all available routes and book your seat instantly</p>
+    </header>
+
+    <!-- Search -->
+    <section class="search-box">
+      <h2>Search Trains</h2>
+      <p>Enter source and destination to filter results</p>
+
+      <form id="search-form" class="search-grid" novalidate>
+        <div class="fgroup">
+          <label for="source">From</label>
+          <input id="source" type="text" class="input"
+                 placeholder="e.g. Delhi" autocomplete="off" />
+        </div>
+        <div class="fgroup">
+          <label for="destination">To</label>
+          <input id="destination" type="text" class="input"
+                 placeholder="e.g. Mumbai" autocomplete="off" />
+        </div>
+        <div class="search-acts">
+          <button type="submit" class="btn btn-primary btn-lg">🔍 Search</button>
+          <button type="button" id="btn-clear" class="btn btn-ghost btn-lg">✕ Clear</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Results -->
+    <section>
+      <div class="ph-row">
+        <p id="res-count" class="text-muted"></p>
+        <a href="/bookings.html" class="btn btn-outline btn-sm">🎫 My Bookings</a>
+      </div>
+      <div id="trains-grid"></div>
+    </section>
+
+  </div>
+</main>
+
+<script src="/js/api.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/stations.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

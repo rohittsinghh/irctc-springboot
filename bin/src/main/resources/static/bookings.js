@@ -99,35 +99,27 @@
     var btn      = e.currentTarget;
     var ticketId = btn.dataset.id;
     var shortId  = btn.dataset.short;
-    // Optimistic UI: hide card immediately and allow undo before server call
-    var card = document.getElementById('tk-' + ticketId);
-    if (!card) return;
 
-    // visually remove
-    card.classList.add('removing');
+    if (!confirm('Cancel ticket #' + shortId + '? This cannot be undone.')) return;
 
-    // disable the button to avoid duplicate clicks
-    btn.disabled = true;
+    UI.btnLoad(btn, 'Cancelling…');
 
-    var pending = { done: false };
+    try {
+      var result = await API.cancelTicket(ticketId);
 
-    // schedule server cancellation after delay (allow undo)
-    pending.timer = setTimeout(async function () {
-      pending.done = true;
-      try {
-        var result = await API.cancelTicket(ticketId);
+      if (result.error) {
+        UI.toast(result.error === 'ticket_not_found'
+          ? 'Ticket not found — may already be cancelled.'
+          : result.error, 'err');
+        UI.btnReset(btn);
+        return;
+      }
 
-        if (result.error) {
-          UI.toast(result.error === 'ticket_not_found'
-            ? 'Ticket not found — may already be cancelled.'
-            : result.error, 'err');
-          // restore UI
-          card.classList.remove('removing');
-          btn.disabled = false;
-          return;
-        }
+      UI.toast('Ticket #' + shortId + ' cancelled.', 'ok');
 
-        // remove from DOM after transition
+      var card = document.getElementById('tk-' + ticketId);
+      if (card) {
+        card.classList.add('removing');
         card.addEventListener('transitionend', function () {
           card.remove();
           var remaining = list.querySelectorAll('.ticket-card').length;
@@ -137,36 +129,12 @@
               'Head to Search Trains and book your first journey');
           }
         }, { once: true });
-
-        UI.toast('Ticket #' + shortId + ' cancelled.', 'ok');
-        // inline confirmation banner (auto-hide). Append into #toasts for reliable visibility.
-        try {
-          var toasts = document.getElementById('toasts') || document.body;
-          var conf = document.createElement('div');
-          conf.className = 'toast confirm-toast';
-          conf.setAttribute('role', 'status');
-          conf.textContent = 'Ticket #' + shortId + ' cancelled.';
-          conf.style.cssText = 'background:#e6ffed;border:1px solid #9ee6b6;padding:10px;border-radius:6px;margin:6px 0;color:#044d14;font-weight:600;';
-          toasts.appendChild(conf);
-          // ensure it's readable by screen readers
-          conf.focus && conf.focus();
-          setTimeout(function () { if (conf && conf.parentNode) conf.parentNode.removeChild(conf); }, 4000);
-        } catch (e) { /* ignore DOM errors */ }
-      } catch (err) {
-        UI.toast(err.message, 'err');
-        card.classList.remove('removing');
-        btn.disabled = false;
       }
-    }, 4500);
 
-    // show undo toast
-    UI.toastAction('Ticket #' + shortId + ' cancelled.', 'info', 4500, 'Undo', function () {
-      if (pending.done) return; // too late
-      clearTimeout(pending.timer);
-      card.classList.remove('removing');
-      btn.disabled = false;
-      UI.toast('Undo successful', 'ok', 1200);
-    });
+    } catch (err) {
+      UI.toast(err.message, 'err');
+      UI.btnReset(btn);
+    }
   }
 
   /* ── Refresh ── */

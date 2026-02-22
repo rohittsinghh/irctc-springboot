@@ -335,9 +335,4 @@
   "userId" : "8e85a070-7f9e-4d36-8130-dffef3fa3f30",
   "name" : "rohit1",
   "password" : "1111"
-}, {
-  "ticketsBooked" : [ ],
-  "userId" : "2b3ce423-f282-4b11-9b11-3561504b53d7",
-  "name" : "rohit12",
-  "password" : "1111"
 } ]

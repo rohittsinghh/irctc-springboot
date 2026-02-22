@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRCTC — Login</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚂</text></svg>" />
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body class="simple">
+
+<div id="page-loader"></div>
+<div id="toasts" aria-live="polite"></div>
+<nav id="nav"></nav>
+
+<main class="auth-wrap">
+
+  <!-- ── Hero ── -->
+  <aside class="auth-hero">
+    <div class="hero-tag">🚂 Introducing — SwiftRail</div>
+    <h1 class="hero-title">Book Faster<br>Travel Smarter<br><span>SwiftRail</span></h1>
+    <p class="hero-sub">Effortless train bookings — instant search, clear seat availability, and a fast checkout flow.</p>
+    <p class="hero-note">Plan your journey in seconds.</p>
+    <p class="hero-desc">A polished booking experience with powerful search, intuitive UI, and sample data to explore features and integrations.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="stat-val">Fast</span><span class="stat-lbl">Search</span></div>
+      <div class="hero-stat"><span class="stat-val">Simple</span><span class="stat-lbl">Booking</span></div>
+      <div class="hero-stat"><span class="stat-val">Reliable</span><span class="stat-lbl">UX</span></div>
+    </div>
+  </aside>
+
+  <!-- ── Form ── -->
+  <section class="auth-panel">
+    <div class="auth-card">
+
+      <div class="auth-card-logo"><span>🚂</span> IRCTC</div>
+      <h2>Welcome back</h2>
+      <p class="sub">Sign in to your account to continue</p>
+
+      <form id="login-form" class="auth-form" novalidate>
+
+        <div class="fgroup">
+          <label for="username">Username</label>
+          <input id="username" type="text" class="input"
+                 placeholder="Enter your username"
+                 autocomplete="username" autocapitalize="off" />
+        </div>
+
+        <div class="fgroup">
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <input id="password" type="password" class="input"
+                   placeholder="Enter your password"
+                   autocomplete="current-password" />
+            <button type="button" id="eye-pass" class="eye-btn" title="Show/hide">👁</button>
+          </div>
+        </div>
+
+        <button type="submit" id="btn-login" class="btn btn-primary btn-full btn-lg">
+          Sign In
+        </button>
+
+      </form>
+
+      <p class="auth-foot">Don't have an account? <a href="/signup.html">Create one →</a></p>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- scripts in dependency order — api → auth → ui → page controller -->
+<script src="/js/api.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/login.js"></script>
+</body>
+</html>

@@ -66,9 +66,23 @@ public class BookingController {
 
 
 @DeleteMapping("/{ticketId}")
-public Map<String, String> cancelTicket(@PathVariable String ticketId) {
+public Map<String, String> cancelTicket(@PathVariable String ticketId,
+                                        @RequestParam(required = false) String userId) {
 
-    Ticket removed = userService.removeTicket(ticketId);
+    if (userId == null) {
+        return Map.of("error", "userId_required");
+    }
+
+    String ownerId = userService.findTicketOwnerId(ticketId);
+    if (ownerId == null) {
+        return Map.of("error", "ticket_not_found");
+    }
+
+    if (!ownerId.equals(userId)) {
+        return Map.of("error", "forbidden");
+    }
+
+    Ticket removed = userService.removeTicketIfOwner(ticketId, userId);
 
     if (removed != null) {
         trainService.releaseSeat(removed.getTrain().getTrainId());

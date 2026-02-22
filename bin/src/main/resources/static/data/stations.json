@@ -1,0 +1,17 @@
+[
+  {"code":"NDLS","name":"New Delhi","city":"New Delhi"},
+  {"code":"BCT","name":"Mumbai Central","city":"Mumbai"},
+  {"code":"CSTM","name":"Chhatrapati Shivaji Maharaj Terminus","city":"Mumbai"},
+  {"code":"HWH","name":"Howrah Junction","city":"Kolkata"},
+  {"code":"SBC","name":"Bengaluru Cantt","city":"Bengaluru"},
+  {"code":"MAS","name":"Chennai Central","city":"Chennai"},
+  {"code":"SC","name":"Secunderabad Junction","city":"Hyderabad"},
+  {"code":"LKO","name":"Lucknow NR","city":"Lucknow"},
+  {"code":"CNB","name":"Kanpur Central","city":"Kanpur"},
+  {"code":"PUNE","name":"Pune Junction","city":"Pune"},
+  {"code":"PRYJ","name":"Prayagraj Junction","city":"Prayagraj"},
+  {"code":"TRIV","name":"Thiruvananthapuram Central","city":"Thiruvananthapuram"},
+  {"code":"KOAA","name":"Kolkata","city":"Kolkata"},
+  {"code":"BJU","name":"Bikaner","city":"Bikaner"},
+  {"code":"JU","name":"Jodhpur Junction","city":"Jodhpur"}
+]

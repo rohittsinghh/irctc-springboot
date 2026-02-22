@@ -2,9 +2,6 @@
 FROM eclipse-temurin:17-jdk-jammy AS build
 WORKDIR /app
 
-# install Maven
-RUN apt-get update && apt-get install -y maven && rm -rf /var/lib/apt/lists/*
-
 # copy sources and build with maven (skip tests for speed)
 COPY . /app
 RUN mvn -B -DskipTests package

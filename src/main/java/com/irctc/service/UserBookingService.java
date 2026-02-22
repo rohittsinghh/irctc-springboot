@@ -115,4 +115,29 @@ public class UserBookingService {
         return null;
     }
 
+    public String findTicketOwnerId(String ticketId) {
+        for (User user : users) {
+            for (Ticket t : user.getTicketsBooked()) {
+                if (t.getTicketId().equals(ticketId)) {
+                    return user.getUserId();
+                }
+            }
+        }
+        return null;
+    }
+
+    public Ticket removeTicketIfOwner(String ticketId, String userId) {
+        User user = getUserById(userId);
+        if (user == null) return null;
+
+        for (Ticket t : new ArrayList<>(user.getTicketsBooked())) {
+            if (t.getTicketId().equals(ticketId)) {
+                user.getTicketsBooked().remove(t);
+                saveUsers();
+                return t;
+            }
+        }
+        return null;
+    }
+
 }
