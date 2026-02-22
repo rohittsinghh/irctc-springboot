@@ -1,5 +1,7 @@
 # Maven
-/target/
+target/
+*.jar
+*.class
 
 # IDE
 /.settings/
@@ -8,10 +10,15 @@
 
 # OS
 .DS_Store
+Thumbs.db
 
 # Logs
 /logs
+*.log
 
 # JetBrains
 /.idea/
 *.iml
+
+# VS Code
+.vscode/
