@@ -30,3 +30,11 @@ jobs:
 
       - name: Push Docker Image
         run: docker push rohittsinghh/irctc-springboot:latest
+
+      # Wait for Docker Hub to fully propagate the new image before telling Render to pull it
+      - name: Wait for Docker Hub propagation
+        run: sleep 10
+
+      - name: Trigger Render Deploy
+        run: |
+          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
